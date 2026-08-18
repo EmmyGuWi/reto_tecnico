@@ -1,0 +1,30 @@
+# Java / Maven
+target/
+*.class
+
+# Angular / Node
+node_modules/
+dist/
+.angular/
+
+# VS Code
+.vscode/
+
+# IntelliJ
+.idea/
+*.iml
+
+# Eclipse
+.settings/
+.classpath
+.project
+
+# Logs
+*.log
+
+# Windows
+Thumbs.db
+
+# Variables de entorno
+.env
+.env.*
