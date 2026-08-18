@@ -1,0 +1,46 @@
+<h2>Registrar operación</h2>
+<!-- Se cambia el div por un form con el evento ngSubmit -->
+<form (ngSubmit)="form()" class="row g-3 align-items-center">
+
+  <div class="col-auto">
+    <label for="operacion" class="col-form-label">Operación:</label>
+  </div>
+  <div class="col-auto">
+    <input type="text" id="operacion" class="form-control" name="operacion"  [(ngModel)]="operacion">
+  </div>
+
+  <div class="col-auto">
+    <label for="importe" class="col-form-label">Importe:</label>
+  </div>
+  <div class="col-auto">
+    <input type="text" id="importe" class="form-control" name="importe"  [(ngModel)]="importe"
+      step="0.01">
+  </div>
+
+  <div class="col-auto">
+    <label for="cliente" class="col-form-label">Cliente:</label>
+  </div>
+  <div class="col-auto">
+    <input type="text" id="cliente" class="form-control" name="cliente" [(ngModel)]="cliente">
+  </div>
+
+  <div class="col-auto">
+    <label for="secreto" class="col-form-label">Secreto:</label>
+  </div>
+  <div class="col-auto">
+    <input type="text" id="secreto" class="form-control" name="secreto" [(ngModel)]="secreto">
+  </div>
+    @if (mensajeError) {
+    <div class="col-12">
+      <div class="alert alert-danger">
+        {{ mensajeError }}
+      </div>
+    </div>
+  }
+
+
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Enviar</button>
+  </div>
+
+</form>
